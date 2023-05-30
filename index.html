@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>homepage</title>
+  <title>EventFree homepage</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/svg/logo-1.svg">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
   <header class="img">
-    <div class="container">
-      <div class=" pt-18 pb-32">
-        <div class="nav">
+    <div class="z-index">
+      <div class="container">
+        <div class=" ml-12 nav bg-color fixed max-width">
           <input type="checkbox" id="nav-check">
           <div class="header">
             <div class="title z-index">
-              <div class="d-flex align-center mt-20 z-index navbar-logo">
-                <img class="logo pl-16" src="./assets/img/svg/logo-1.svg" alt="logo-1">
+              <div class="d-flex align-center mt-20 z-index">
+                <img class="navbar-logo logo pl-16 wh-100" src="./assets/img/svg/logo-1.svg" alt="logo-1">
                 <ul>
-                  <li class="eventfree-text eventfree">
-                    <span class="color">Events</span><span class="color-2">Free</span>
+                  <li class="eventfree-text">
+                    <span class="color eventfree">Events</span><span class="color-2">Free</span>
                   </li>
                 </ul>
               </div>
@@ -36,15 +37,16 @@
           </div>
 
           <div class="nav-links">
-            <a href="#" class="home-text color-6">HOME</a>
+            <a href="#" class="nav-link color-6">HOME</a>
             <a href="#" class="nav-link color-6">EVENTS</a>
             <a href="#" class="nav-link color-6">FEED</a>
             <a href="#" class="nav-link color-6">USER NAME</a>
             <a href="#" class="nav-link btn">Log Out</a>
           </div>
         </div>
-      </div>
-
+        </div>
+    </div>
+      <div class=" container">
       <section>
         <div class="pt-32 relative">
           <img class="line-width line-absolute" src="./assets/img/png/line_img.png" alt="header-sec-line">
@@ -98,7 +100,7 @@
                   </div>
                 </div>
 
-                <div class="col-3 d-flex align-center col-6-xl flex_xl col-12-xl box-flex col-12-lg flex-lg pb-18 pt-17">
+                <div class="col-3 d-flex align-center col-6-xl flex_xl col-12-xl box-flex col-12-lg flex-lg pb-18 pt-17 ">
                   <ul>
                     <li><a href="#" class="box_btn btn-text pl-15">GO CHECK</a></li>
                   </ul>
@@ -116,7 +118,7 @@
     <section>
       <div class="pt-45 pb-32">
         <div class="container">
-          <div class="row flex-xxl ">
+          <div class="row flex-xxl">
             <div class="col-6 col-12_xxl col-12_xl flex-xl">
               <div class=" relative">
                 <img class="wh-100" src="./assets/img/png/speech_img.png" alt="speech_img">
@@ -164,8 +166,6 @@
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@
             <div class="row">
               <div class="col-6 col-12-sm">
                 <div class="card">
-                  <img class="img" src="./assets/img/svg/seminar-img.svg" alt="seminar-img">
+                  <img class="wh-100" src="./assets/img/svg/seminar-img.svg" alt="seminar-img">
                   <p class="poppins-400-14 color-4">09/23/2021</p>
                   <p class="poppins-500-24">Lorem ipsum</p>
                   <p class="poppins-400-14 pb-20  color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -245,7 +245,7 @@
               <div class="col-6 col-12-sm pt-32-sm">
                 <div class="card">
                   <div class="relative">
-                    <img class="img" src="./assets/img/svg/party-enjoy-img.svg" alt="party-enjoy-img">
+                    <img class="wh-100" src="./assets/img/svg/party-enjoy-img.svg" alt="party-enjoy-img">
                     <a href="#"><img class="arrow-absolute" src="./assets/img/svg/Arrow.svg" alt="Arrow"></a>
                   </div>
                   <p class="poppins-400-14 color-4">09/23/2021</p>
@@ -312,10 +312,10 @@
   </main>
 
   <footer>
-    <div class="bg-color">
+    <div class="bg-color-2">
       <div class="container">
-        <div class="row pt-75  col_12_md md-screen pb-b">
-          <div class="col-6  col_12_md md-screen">
+        <div class="row pt-75 pb-b">
+          <div class="col-6 col-12-lg flex-lg">
             <div class="d-flex align-center">
               <img src="./assets/img/svg/logo-1.svg" alt="logo-1">
               <ul>
@@ -324,7 +324,7 @@
                 </li>
               </ul>
             </div>
-            <p class="fotter_paragraph color-6 pt-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            <p class="fotter_paragraph color-6 pt-32 col-12-lg flex-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               efficitur
               urna in dictum suscipit.
               Suspendisse maximus ipsum sem. c </p>
@@ -335,9 +335,9 @@
             </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-6 col-12_xl xl-screen">
             <div class="row">
-              <div class="col-4 col-12_md flex_xl">
+              <div class="col-4 col-12-lg flex-lg  p-20">
                 <div class="d-flex align-center justify-center">
                   <ul>
                     <li class="color-6 poppins-700-14 pt-12 pr-50">SERVICES</li>
@@ -356,36 +356,41 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-8 col-12_md flex_xl pt-20_xl">
+              <div>
+                
+              </div>
+              <div class="col-8 col-12-lg flex-lg p-20">
                 <p class="color-6 poppins-700-14 pt-12">GALLERY</p>
-                <div class="row">
-                  <div class="col-4 mt_10 col_6_sm sm-screen">
-                    <a href="#"><img class="wh-100" src="./assets/img/png/fotter_img_1.png" alt="fotter_img_1"></a>
+                <div class="col-12-lg flex-lg col_6_sm sm-screen">
+                  <div class="row">
+                    <div class="col-4 mt_10 col_6_sm sm-screen">
+                      <a href="#"><img class="wh-100" src="./assets/img/png/fotter_img_1.png" alt="fotter_img_1"></a>
+                    </div>
+  
+                    <div class="col-4 mt_10 col_6_sm sm-screen">
+                      <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-2.svg" alt="footer-img-2"></a>
+                    </div>
+  
+                    <div class="col-4 mt_10 col_6_sm sm-screen">
+                      <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-3.svg" alt="footer-img-3"></a>
+                    </div>
+  
+                    <div class="col-4 mt_10 col_6_sm sm-screen">
+                      <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-4.svg" alt="footer-img-4"></a>
+                    </div>
+  
+                    <div class="col-4 mt_10 col_6_sm sm-screen">
+                      <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-5.svg" alt="footer-img-5"></a>
+                    </div>
+  
+                   <div class="col-4 mt_10 col_6_sm sm-screen">
+                        <a href="#">
+                          <div class="footer-box col_6_sm sm-screen  wh_50 poppins-700-12 color-6">
+                            <p class="d-flex align-center justify-center p-20">show <br> more</p>
+                          </div>
+                        </a>
+                   </div>
                   </div>
-
-                  <div class="col-4 mt_10 col_6_sm sm-screen">
-                    <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-2.svg" alt="footer-img-2"></a>
-                  </div>
-
-                  <div class="col-4 mt_10 col_6_sm sm-screen">
-                    <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-3.svg" alt="footer-img-3"></a>
-                  </div>
-
-                  <div class="col-4 mt_10 col_6_sm sm-screen">
-                    <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-4.svg" alt="footer-img-4"></a>
-                  </div>
-
-                  <div class="col-4 mt_10 col_6_sm sm-screen">
-                    <a href="#"><img class="wh-100" src="./assets/img/svg/footer-img-5.svg" alt="footer-img-5"></a>
-                  </div>
-
-                 <div class="col-4 mt_10">
-                      <a href="#">
-                        <div class="footer-box col_6_sm sm-screen  wh_50 poppins-700-12 color-6">
-                          <p class="d-flex align-center justify-center p-20">show <br> more</p>
-                        </div>
-                      </a>
-                 </div>
                 </div>
               </div>
             </div>

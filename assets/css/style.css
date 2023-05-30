@@ -258,8 +258,16 @@
     gap: 10px;
 }
 
+.max-width{
+    max-width: 1320px;
+}
+
 .bg-color {
-    background-color: black;
+    background: #00000091;
+}
+
+.bg-color-2 {
+    background: #000000;
 }
 
 .color {
@@ -285,6 +293,10 @@
 
 .pt-18 {
     padding-top: 18px;
+}
+
+.ml-12{
+    margin-left: -12px;
 }
 
 .mt-40 {
@@ -357,6 +369,10 @@
     padding-right: 50px;
 }
 
+.pr-25{
+    padding-right: -25px;
+}
+
 .pt-75 {
     padding-top: 75px;
 }
@@ -366,7 +382,7 @@
 }
 
 .padd {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .p-bottom {
@@ -542,6 +558,10 @@
     width: 100%;
 }
 
+.nav-link:hover{
+    -webkit-text-stroke: 1px white;
+}
+
 .line-absolute {
     position: absolute;
     top: 155px;
@@ -696,13 +716,10 @@
 }
 
 .nav {
-    width: 98%;
-    background: black;
+    width:100%;
     padding: 12px;
     padding-top: 20px;
     z-index: 1;
-    position: fixed;
-    border-radius: 20px;
 }
 .pl-16{
     padding-left: -100px;
@@ -717,7 +734,9 @@
     color: #fff;
     padding: 10px 10px 10px 10px;
 }
-
+.fixed{
+    position: fixed;
+}
 .nav-btn {
     display: none;
 }
@@ -767,9 +786,12 @@
 }
 
 @media (max-width:992px) {
+    .bg-color{
+        background: #00000091;
+    }
     .nav {
-        width: 98%;
-        background:grey;
+        width: 100%;
+        background: #00000091;
         padding-top: 40px;
         z-index: 1;
         position: fixed;
@@ -786,14 +808,15 @@
         display: inline-block;
         width: 50px;
         height: 50px;
-        padding: 13px;  
+        padding: 13px; 
+        padding-top: 15px; 
     }
 
     .navbar-logo{
-        margin-top: -55px;
+        margin-top: -17px;
     }
     .eventfree{
-        margin-top: -16px;
+        margin-top: -6px;
     }
 
     .nav>.nav-btn>label>span {
@@ -808,8 +831,8 @@
         position: absolute;
         display: block;
         width: 60%;
-        background-color: grey;
-        transition: all 0.9s;
+        background-color: black;
+        transition: all 1.9s;
         top: 140px;
         right: 20%;
         border-radius: 23px;
@@ -832,7 +855,7 @@
 
     #nav-check:checked~.nav-links {
         height: calc(60vh - 50px);
-        overflow-y: hidden;
+
     }
     .box{
         border: 1px solid #2C49FEBD;
@@ -938,9 +961,6 @@
 }
 
 @media (max-width:890px) {
-    .nav{
-        width: 97%;
-    }
     .col-12_xl {
         width: 100%;
         padding-left: 12px;
@@ -1048,9 +1068,7 @@
         line-height: 50px;
         max-width: 708px;
     }
-    .pt-32 {
-        padding-top: 32px;
-    }
+
     .line-width {
         max-height: 7px;
         max-width: 315px;
@@ -1095,9 +1113,6 @@
 }
 
 @media(max-width:653px) {
-    .nav{
-        width: 96%;
-    }
     .col_12_md {
         width: 100%;
         padding-left: 12px;
@@ -1168,9 +1183,6 @@
     .wh-100_sm{
         width: 100%;
     }
-    .nav{
-        width: 95%;
-    }
     .question_text {
         font-family: Poppins;
         font-size: 30px;
@@ -1234,7 +1246,7 @@
     }
     .footer-box {
         height: 100%;
-        width: 170%;
+        width: 100%;
         background: rgba(45, 60, 174, 0.53);
     }
     
@@ -1267,7 +1279,7 @@
     }
     .eventfree-text {
         font-family: Poppins;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         line-height: 49px;
     }
@@ -1311,9 +1323,6 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
-    .nav{
-        width: 94%;
     }
     .line-width {
         max-height: 6px;
